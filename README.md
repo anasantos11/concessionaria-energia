@@ -1,4 +1,4 @@
-# Concessonária de Energia - Aplicação em .Net Core 2.1.0, C# e NUnit
+# Concessionária de Energia - Aplicação em .Net Core 2.1.0, C# e NUnit
 
 ***Problema-base:***
 
