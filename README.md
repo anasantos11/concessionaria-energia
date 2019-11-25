@@ -11,3 +11,8 @@ A versão inicial do sistema necessita armazenar, para um cliente, todas as suas
 ***Objetivo:***
 
 Usando o processo de TDD, criar os testes e as classes para demonstrar a realização correta das tarefas listadas no problema-base.
+
+***Pré-requisitos para execução do projeto no Visual Studio:***
+
+  - Visual Studio 2017 ou posterior com a carga de trabalho ".NET Core cross-platform development" instalada.
+  - SDK do .NET Core 2.1.0.
