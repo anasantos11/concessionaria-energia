@@ -49,5 +49,15 @@ namespace ConcessionariaEnergia.Teste
 
             Assert.AreEqual(identificadorUnico, unidade.Identificador);
         }
+
+        [Test]
+        public void TestIgualdade()
+        {
+            var identificador = Guid.NewGuid();
+            Assert.IsTrue(new Unidade(identificador).Equals(new Unidade(identificador)));
+            Assert.IsFalse(new Unidade(Guid.NewGuid()).Equals(new Unidade(Guid.NewGuid())));
+            Assert.IsFalse(new Unidade(Guid.NewGuid()).Equals(null));
+            Assert.IsFalse(new Unidade(Guid.NewGuid()).Equals(new object()));
+        }
     }
 }

@@ -28,5 +28,16 @@ namespace ConcessionariaEnergia.Model
 
             this.ContasMensais.Add(conta);
         }
+        
+        public override bool Equals(object objeto)
+        {
+            if (objeto == null || !this.GetType().Equals(objeto.GetType()))
+            {
+                return false;
+            }
+
+            var conta = (Unidade)objeto;
+            return this.Identificador == conta.Identificador;
+        }
     }
 }
